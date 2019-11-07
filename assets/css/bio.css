@@ -55,6 +55,8 @@ a {
 }
 
 .contents_container { 
+    /* min-height is used to make the footer sticky. 60px is height of footer. */
+    /* See this page https://css-tricks.com/couple-takes-sticky-footer/ */
     min-height: calc(100vh - 60px);
     clear: both;
 }
@@ -98,11 +100,27 @@ a {
     padding: 10px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 320px 320px;
+    padding-top: 30px;
+    grid-row-gap: 50px;
+  }
+
 .portfolioPhoto{
-    margin-right: 20px;
-    margin-top: 20px;
     width: 300px;
-}   
+    position: relative;
+}
+
+.portfolioPhotoCaption{
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #4AAAA5;
+    text-align: center;
+}
 
 footer { 
     background: #666666;
