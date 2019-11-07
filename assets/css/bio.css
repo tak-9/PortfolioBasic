@@ -92,11 +92,13 @@ a:active { color:  #4AAAA5; }
 
 .inputText{
     width: 100%;
+    border: #dddddd 1px solid;
 }
 
 .textarea{
     width: 100%;
     height: 200px;
+    border: #dddddd 1px solid;
 }
 
 .button{ 
