@@ -28,7 +28,13 @@ h1 {
 
 a {
     text-decoration: none;
+    color: #4AAAA5; 
 }
+
+a:link { color: #4AAAA5; }
+a:visited { color: #4AAAA5; }
+a:hover { color:  #4AAAA5; }
+a:active { color:  #4AAAA5; }
 
 
 .topTitle{ 
