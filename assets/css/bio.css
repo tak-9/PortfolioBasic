@@ -1,18 +1,17 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+html,body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 17px;
-    color: #4AAAA5;
-    background-image: url("../images/wallpaper.png");
+    color: #777777;
+    background-image: url("../images/criss-cross.png");
+    margin: 0px;
+    height: 100%;
 }
 
 header{
     background: white;
-    width: 100% ;
     height: 70px;
-    position: fixed;
-    top: 0px;
-    right:0px;
     border-bottom: solid 2px #cccccc;
+    z-index: 100;
 }
 
 .topbox { 
@@ -23,10 +22,16 @@ header{
 
 h1 { 
     font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4AAAA5;
 }
 
-.myName{ 
+a {
+    text-decoration: none;
+}
+
+
+.topTitle{ 
     width: 220px;
     height: 30px;
     padding: 20px;
@@ -50,18 +55,17 @@ h1 {
 }
 
 .contents_container { 
-    width: 100%;
-    height: 100%;
-    top: 70px;
-    right: 0px;
-    position: fixed;
+    min-height: calc(100vh - 60px);
+    clear: both;
 }
 
 .contents { 
+    clear: both;
     width: 880px;
     background: white;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     border: solid #cccccc 1px;
     line-height: 30px;
     padding: 0 40px 40px 40px;
@@ -78,20 +82,40 @@ h1 {
     margin-right: 20px;
 }
 
+.inputText{
+    width: 100%;
+}
+
+.textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.button{ 
+    background: #666666;
+    color: white;
+    border: 0 none;
+    padding: 10px;
+}
+
+.portfolioPhoto{
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 300px;
+}   
+
 footer { 
     background: #666666;
-    width: 100%;
     height: 50px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
     border-top: solid 10px #4AAAA5;
+    text-align: center;
+    font-size: 10px;
 }
 
 .copyright { 
     text-align: center;
-    position: absolute;
-    bottom: 5px;
+    position: relative;
+    bottom: -30px;
     width: 100%;
     font-size: 10px;
 }
